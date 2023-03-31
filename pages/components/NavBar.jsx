@@ -6,10 +6,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 
 const NavBar = () => {
-    const {nav, setNav} = useState(false);
+    const [nav, setNav] = useState(false);
 
     const handleNav = () =>{
-        setNav(true);
+        setNav(!nav);
     }
     
   return (
@@ -45,7 +45,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
           <div>
             <div className="flex w-full items-center justify-between">
@@ -83,22 +83,16 @@ const NavBar = () => {
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
-            <div className="pt-40 ">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+            <div className="pt-40">
+              <p className="uppercase tracking-widest text-[#5651e5] text-center">
                 Let's connect together
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-center space-x-4 my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedin/>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaGithub/>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail/>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill/>
                 </div>
               </div>
             </div>
