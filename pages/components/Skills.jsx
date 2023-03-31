@@ -12,7 +12,7 @@ function Skills() {
             <h2 className='py-4'>
                 What I can do
             </h2>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 
             <SkillCard imageSrc="/../public/assets/skills/html.png" skillName="HTML" />
             <SkillCard imageSrc="/../public/assets/skills/css.png" skillName="CSS" />
