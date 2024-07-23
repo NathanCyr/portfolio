@@ -3,7 +3,7 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const Main = () => {
   return (
-    <div className="h-screen w-full text-center">
+    <div className="h-screen w-full text-center" id="home">
       <div className="max-w[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
@@ -19,10 +19,14 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-center space-x-4 max-w-[330px] m-auto py-4">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaLinkedin/>
+                  <a href="https://www.linkedin.com/in/nathan-cyr-16230a185/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin/>
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaGithub/>
+                  <a href="https://github.com/NathanCyr" target="_blank" rel="noopener noreferrer">
+                  <FaGithub/>
+                  </a>
                 </div>
           </div>
         </div>

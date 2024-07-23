@@ -9,6 +9,10 @@
         tracking-wide;
   }
 
+  html{
+    scroll-behavior: smooth!important;
+  }
+
   h1,
   h2,
   h3,

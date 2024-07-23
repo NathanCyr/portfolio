@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
-    <div className="w-full lg:h-screen">
+    <div className="w-full lg:h-screen" id="contact">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -39,10 +39,14 @@ function Contact() {
                 <div>
                   <div className="flex items-center justify-left space-x-4 max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedin />
+                    <a href="https://www.linkedin.com/in/nathan-cyr-16230a185/" target="_blank" rel="noopener noreferrer">
+                      <FaLinkedin/>
+                    </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
+                    <a href="https://github.com/NathanCyr" target="_blank" rel="noopener noreferrer">
+                      <FaGithub/>
+                    </a>
                     </div>
                   </div>
                 </div>
