@@ -1,3 +1,7 @@
 {
-    
+    "home_title": "Home",
+    "about_title": "About",
+    "skills_title": "Skills",
+    "projects_title": "Projects",
+    "contact_title": "Contact"
 }
