@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from './LanguageSwitcher';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {BsFillPersonLinesFill} from 'react-icons/bs';
